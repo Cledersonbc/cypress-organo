@@ -9,12 +9,12 @@ npm install
 
 ## GUI execution
 ```shell
-npx cypress open
+npm run cypress:open
 ```
 
 ## CLI execution
 ```shell
-npx cypress run tests
+npm run cypress:run
 ```
 
 # Requirements
