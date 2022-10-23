@@ -6,8 +6,15 @@ npm install
 ```
 
 # Run Cypress project
+
+## GUI execution
 ```shell
 npx cypress open
+```
+
+## CLI execution
+```shell
+npx cypress run tests
 ```
 
 # Requirements
