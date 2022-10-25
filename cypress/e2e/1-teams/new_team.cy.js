@@ -7,7 +7,7 @@ describe('1 - Validar novos times', () => {
     })
 
     it('Cadastro de colaborador', () => {
-        const worker = require('../../fixtures/worker_example.json');
+        const worker = require('../../fixtures/worker_example.json')
 
         cy.get('.main-form form input[placeholder="Digite seu nome"]').type(worker.name)
         cy.get('.main-form form input[placeholder="Digite seu cargo"]').type(worker.position)
@@ -18,7 +18,7 @@ describe('1 - Validar novos times', () => {
         cy.get('.team')
             .should('exist', worker.teamName)
             .find('.worker')
-            .contains(worker.name)
+            .should('contain', worker.name)
 
     })
 
