@@ -7,13 +7,18 @@ describe('1 - Validar novos times', () => {
     })
 
     it('Cadastro de colaborador', () => {
-        const defaultWorker = require('../../fixtures/worker_example.json');
+        const worker = require('../../fixtures/worker_example.json');
 
-        cy.get('input[placeholder="Digite seu nome"]').type(defaultWorker.name)
-        cy.get('input[placeholder="Digite seu cargo"]').type(defaultWorker.position)
-        cy.get('input[placeholder="Digite o endereço da imagem"]').type(defaultWorker.image)
-        cy.get('select[required]').select('Back-end')
-        cy.get('button').contains('Enviar').click()
+        cy.get('.main-form form input[placeholder="Digite seu nome"]').type(worker.name)
+        cy.get('.main-form form input[placeholder="Digite seu cargo"]').type(worker.position)
+        cy.get('.main-form form input[placeholder="Digite o endereço da imagem"]').type(worker.image)
+        cy.get('.main-form form select[required]').select(worker.teamName)
+        cy.get('.main-form form button').contains('Enviar').click()
+
+        cy.get('.team')
+            .should('exist', worker.teamName)
+            .find('.worker')
+            .contains(worker.name)
 
     })
 
