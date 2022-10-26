@@ -6,39 +6,39 @@
         "teamName": "Back-end"
     },
     {
-        "name": "Clederson Cruz",
-        "position": "Analista de Sistemas",
-        "image": "https://github.com/Cledersonbc.png",
+        "name": "Angelines Fernández",
+        "position": "Desenvolvedora React",
+        "image": "",
         "teamName": "Front-end"
     },
     {
-        "name": "Clederson Cruz",
-        "position": "Analista de Sistemas",
-        "image": "https://github.com/Cledersonbc.png",
+        "name": "Carlos Villagrán Eslava",
+        "position": "Gerente de Projetos",
+        "image": "",
         "teamName": "Inovação e Gestão"
     },
     {
-        "name": "Clederson Cruz",
-        "position": "Analista de Sistemas",
-        "image": "https://github.com/Cledersonbc.png",
+        "name": "María Antonieta de las Nieves",
+        "position": "Especialista iOS | Swift",
+        "image": "",
         "teamName": "Mobile"
     },
     {
-        "name": "Clederson Cruz",
-        "position": "Analista de Sistemas",
-        "image": "https://github.com/Cledersonbc.png",
+        "name": "Ramón Valdés",
+        "position": "Arquiteto de Soluções",
+        "image": "",
         "teamName": "DevOps"
     },
     {
-        "name": "Clederson Cruz",
-        "position": "Analista de Sistemas",
-        "image": "https://github.com/Cledersonbc.png",
+        "name": "Édgar Vivar",
+        "position": "Design",
+        "image": "",
         "teamName": "UX & Design"
     },
     {
-        "name": "Clederson Cruz",
-        "position": "Analista de Sistemas",
-        "image": "https://github.com/Cledersonbc.png",
+        "name": "Rubén Aguirre",
+        "position": "Cientista de Dados",
+        "image": "",
         "teamName": "Data Science"
     }
 ]
