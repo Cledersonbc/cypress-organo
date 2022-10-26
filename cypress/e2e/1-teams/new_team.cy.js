@@ -64,7 +64,7 @@ describe('1 - Validar novo time', () => {
         cy.get('.main-form form button').contains('Enviar').click()
 
         cy.get('.team')
-            .should('exist', teamName)
+            .should('contain', teamName)
             .find('.worker')
             .should('contain', worker.name)
     }
