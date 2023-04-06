@@ -110,4 +110,4 @@ dist
 
 # Report files
 cucumber-json/
-reports/cucumber-html
+reports/
