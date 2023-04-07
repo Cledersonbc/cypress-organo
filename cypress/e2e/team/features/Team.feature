@@ -34,14 +34,3 @@ Feature: Team
     Given I open Organo page
     When I fill the 'Data Science' user record correctly
     Then an user from 'Data Science' is recorded with successful
-
-
-    
-   
-
-    
-   
-
-    
-
-    
