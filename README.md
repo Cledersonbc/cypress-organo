@@ -1,4 +1,4 @@
-This is an automation project for [Organo](https://github.com/Cledersonbc/organo).
+This is an automation project for [Organo](https://github.com/Cledersonbc/organo). This project is using BDD (Behavior Developtment Driven) with Gherkin language.
 
 <p style="text-align: center">
     <img src="./cypress/fixtures/organo-cypress.png">
@@ -54,6 +54,8 @@ If you have never worked with Cypress, here are a general explanation about the 
 * [Page Object Pattern - Article of Martin Fowler](https://martinfowler.com/bliki/PageObject.html)
 * [Page Objects and App Actions in Cypress - Cypress Blog](https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-app-actions/)
 * [Cypress Doc](https://docs.cypress.io/guides/overview/why-cypress)
+* [Behavior-driven Development - Wikipedia](https://en.wikipedia.org/wiki/Behavior-driven_development)
+* [Gherkin and Cucumber Reference](https://cucumber.io/docs/gherkin/reference/)
 # Requirements
 * [Node](https://nodejs.org/en/download/)
 * [Git](https://git-scm.com/downloads)
