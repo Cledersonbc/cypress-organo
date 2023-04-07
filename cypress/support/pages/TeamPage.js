@@ -1,9 +1,9 @@
 const locators = {
-    INPUT_WORKER_NAME: '.main-form form input[placeholder="Digite seu nome"]',
-    INPUT_POSITION: '.main-form form input[placeholder="Digite seu cargo"]',
-    INPUT_IMG_ADDRESS: '.main-form form input[placeholder="Digite o endereço da imagem"]',
-    SELECT_TEAM: '.main-form form select[required]',
-    BTN_SUBMIT: '.main-form form button'
+    INPUT_WORKER_NAME: 'label:contains(Nome) ~ input[placeholder="Digite seu nome"]',
+    INPUT_POSITION: 'label:contains(Cargo) ~ input[placeholder="Digite seu cargo"]',
+    INPUT_IMG_ADDRESS: 'label:contains(Imagem) ~ input[placeholder="Digite o endereço da imagem"]',
+    SELECT_TEAM: 'label:contains(Time) ~ select[required]',
+    BTN_SUBMIT: 'button:contains(Enviar)'
 }
 
 const TeamPage = {
