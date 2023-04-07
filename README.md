@@ -1,4 +1,4 @@
-This is an automation project for [Organo](https://github.com/Cledersonbc/organo). This project is using BDD (Behavior Developtment Driven) with Gherkin language.
+This is an automation project for [Organo](https://github.com/Cledersonbc/organo). This project is using BDD (Behavior-driven Development) with Gherkin language.
 
 <p style="text-align: center">
     <img src="./cypress/fixtures/organo-cypress.png">
