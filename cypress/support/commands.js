@@ -23,3 +23,19 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+const { getCurrentFormatedDate } = require("./util")
+
+Cypress.Commands.add('print', (printName) => {
+    const testName = `${Cypress.spec.name}/${getCurrentFormatedDate()}-${Cypress.currentTest.title}`
+    const fullPath = `${testName}/${Cypress.env('printNumber')} - ${printName === undefined ? 'screenshot' : printName}`
+    const options = {
+        overwrite: true,
+        scale: true
+    }
+
+    cy.screenshot(fullPath, options)
+
+    const newPrintNumber = Cypress.env('printNumber') + 1
+    Cypress.env('printNumber', newPrintNumber)
+})
