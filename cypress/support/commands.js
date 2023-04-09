@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-const { getCurrentFormattedDate } = require("./util")
+const { getCurrentFormattedDate } = require('./util')
 
 Cypress.Commands.add('print', (printName) => {
     const testName = `${Cypress.spec.name.replace('.feature', '')}/${getCurrentFormattedDate()}-${Cypress.currentTest.title}`

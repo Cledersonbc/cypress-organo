@@ -1,6 +1,6 @@
-/// <reference types="cypress" />
-const { Given, Then, When } = require("cypress-cucumber-preprocessor/steps")
-const { TeamPage } = require("../../../support/pages/TeamPage")
+/// <reference types='cypress' />
+const { Given, Then, When } = require('cypress-cucumber-preprocessor/steps')
+const { TeamPage } = require('../../../support/pages/TeamPage')
 
 Given('I open Organo page', () => {
     cy.visit('/')

@@ -8,7 +8,7 @@ const locators = {
 
 const TeamPage = {
     fillRecord: (teamName) => {
-        const worker = require('../../fixtures/worker_team.json').find((mock) => mock.teamName === teamName)
+        const worker = require('../../fixtures/worker-team.json').find((mock) => mock.teamName === teamName)
 
         cy.print('Formulário Limpo')
         cy.get(locators.INPUT_WORKER_NAME).type(worker.name)
@@ -20,7 +20,7 @@ const TeamPage = {
     },
 
     checkRecord: (teamName) => {
-        const worker = require('../../fixtures/worker_team.json').find((mock) => mock.teamName === teamName)
+        const worker = require('../../fixtures/worker-team.json').find((mock) => mock.teamName === teamName)
 
         cy.print('Usuário Adicionado')
         cy.get('.team')
