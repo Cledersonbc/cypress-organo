@@ -6,8 +6,12 @@ const locators = {
     BTN_SUBMIT: 'button:contains(Enviar)'
 }
 
-const TeamPage = {
-    fillRecord: (teamName) => {
+class TeamPage {
+    constructor() {
+
+    }
+
+    fillRecord(teamName) {
         const worker = require('../../fixtures/worker-team.json').find((mock) => mock.teamName === teamName)
 
         cy.print('Formulário Limpo')
@@ -17,9 +21,9 @@ const TeamPage = {
         cy.get(locators.SELECT_TEAM).select(worker.teamName)
         cy.print('Formulário Preenchido')
         cy.get(locators.BTN_SUBMIT).contains('Enviar').click()
-    },
+    }
 
-    checkRecord: (teamName) => {
+    checkRecord(teamName) {
         const worker = require('../../fixtures/worker-team.json').find((mock) => mock.teamName === teamName)
 
         cy.print('Usuário Adicionado')
@@ -31,4 +35,4 @@ const TeamPage = {
     }
 }
 
-module.exports = { TeamPage }
+module.exports = TeamPage

@@ -11,7 +11,7 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "cypress/e2e/**",
+    "stepDefinitions": "cypress/support/step-definitions/**",
     "cucumberJson": {
       "generate": true,
       "outputFolder": "cypress/cucumber-json",

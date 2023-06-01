@@ -1,15 +1,16 @@
 /// <reference types='cypress' />
-const { Given, Then, When } = require('cypress-cucumber-preprocessor/steps')
-const { TeamPage } = require('../../../support/pages/TeamPage')
+import { Given, Then, When } from 'cypress-cucumber-preprocessor/steps'
+import TeamPage from '../pages/TeamPage'
+const teamPage = new TeamPage()
 
 Given('I open Organo page', () => {
     cy.visit('/')
 })
 
 When('I fill the {string} user correctly', (teamName) => {
-    TeamPage.fillRecord(teamName)
+    teamPage.fillRecord(teamName)
 })
 
 Then('an user from {string} is recorded with successful', (teamName) => {
-    TeamPage.checkRecord(teamName)
+    teamPage.checkRecord(teamName)
 })
