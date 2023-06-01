@@ -1,6 +1,6 @@
 /// <reference types='cypress' />
 import { Given, Then, When } from 'cypress-cucumber-preprocessor/steps'
-import TeamPage from '../pages/TeamPage'
+import TeamPage from '../pages/team-page'
 const teamPage = new TeamPage()
 
 Given('I open Organo page', () => {
