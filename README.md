@@ -33,10 +33,11 @@ If you have never worked with Cypress, here are a general explanation about the 
 ### Main
 * :test_tube: **e2e/**: test cases and scenarios
   * files.feature: high level test cases using Gherkin
-  * files.cy.js: test cases specification
 * :floppy_disk: **fixtures/**: external pieces of data that are used to set up and provide input for test cases
 * :scroll: **support/**: store helper files and scripts that can be used across multiple tests
+  * elements/: separated files to store page elements location
   * pages/: store Page Object models
+  * step-definitions/: test cases specification (steps)
   * commands.js: place to store custom commands like cy.myComand()
   * cucumber-html-report.js: report generator for tests execution
   * util.js: reusable codes
