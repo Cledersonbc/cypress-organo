@@ -17,8 +17,6 @@ class TeamPage {
 			cy.get(locators.BTN_SUBMIT).contains('Enviar').click()
 			cy.log('Formulário Preenchido')
 		})
-
-
 	}
 
 	checkRecord(teamName) {
