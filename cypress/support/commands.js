@@ -25,22 +25,22 @@
 const { getCurrentFormattedDate } = require('./util')
 
 Cypress.Commands.add('print', (printName) => {
-    const testName = `${Cypress.spec.name.replace('.feature', '')}/${getCurrentFormattedDate()}-${Cypress.currentTest.title}`
-    const fullPath = `${testName}/${Cypress.env('printNumber')} - ${printName === undefined ? 'screenshot' : printName}`
-    const options = {
-        overwrite: true,
-        scale: true
-    }
+	const testName = `${Cypress.spec.name.replace('.feature', '')}/${getCurrentFormattedDate()}-${Cypress.currentTest.title}`
+	const fullPath = `${testName}/${Cypress.env('printNumber')} - ${printName === undefined ? 'screenshot' : printName}`
+	const options = {
+		overwrite: true,
+		scale: true
+	}
 
-    cy.screenshot(fullPath, options)
+	cy.screenshot(fullPath, options)
 
-    const newPrintNumber = Cypress.env('printNumber') + 1
-    Cypress.env('printNumber', newPrintNumber)
+	const newPrintNumber = Cypress.env('printNumber') + 1
+	Cypress.env('printNumber', newPrintNumber)
 })
 
 Cypress.Commands.overwrite('log', (originalFn, message, options) => {
-    const enabledLog = Cypress.config('log')
-    if (enabledLog) {
-        originalFn(message, options)
-    }
+	const enabledLog = Cypress.config('log')
+	if (enabledLog) {
+		originalFn(message, options)
+	}
 })

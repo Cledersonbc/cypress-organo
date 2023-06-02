@@ -1,0 +1,16 @@
+# Ignore the "dist" directory
+dist/
+
+# Ignore all files with the ".tmp" extension
+*.tmp
+
+# Ignore the "node_modules" directory and its contents
+node_modules/
+
+# Ignore all reports files
+reports/
+cucumber-json/
+
+# Ignore all prints/records
+screenshots/
+videos/

@@ -7,7 +7,8 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "report": "node cypress/support/cucumber-html-report.js"
+    "report": "node cypress/support/cucumber-html-report.js",
+    "lint": "eslint . --fix"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
@@ -18,5 +19,10 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     }
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.13.3"
   }
 }
