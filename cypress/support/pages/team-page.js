@@ -24,11 +24,9 @@ class TeamPage {
 			const worker = mocks.find((mock) => mock.teamName === teamName)
 
 			cy.print('Usuário Adicionado')
-			cy.get('.team')
-				.should('contain', teamName)
-				.find('.worker')
-				.should('contain', worker.name)
-				.and('contain', worker.position)
+			cy.get(locators.SECTION_TEAM).should('contain', teamName)
+			cy.get(locators.CARD_WORKER).should('contain', worker.name)
+			cy.get(locators.CARD_WORKER).should('contain', worker.position)
 			cy.log('Usuário Adicionado')
 		})
 	}

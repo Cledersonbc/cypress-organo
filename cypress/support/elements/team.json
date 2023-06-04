@@ -3,5 +3,7 @@
     "INPUT_POSITION": "label:contains(Cargo) ~ input[placeholder='Digite seu cargo']",
     "INPUT_IMG_ADDRESS": "label:contains(Imagem) ~ input[placeholder='Digite o endereço da imagem']",
     "SELECT_TEAM": "label:contains(Time) ~ select[required]",
-    "BTN_SUBMIT": "button:contains(Enviar)"
+    "BTN_SUBMIT": "button:contains(Enviar)",
+    "SECTION_TEAM": ".team",
+    "CARD_WORKER": ".team .worker"
 }
